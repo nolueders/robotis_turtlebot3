@@ -101,8 +101,6 @@ private:
   std::list<sensors::Sensors *> sensors_;
   std::map<std::string, devices::Devices *> devices_;
 
-  std::unique_ptr<Odometry> odom_;
-
   rclcpp::Node::SharedPtr node_handle_;
 
   rclcpp::TimerBase::SharedPtr publish_timer_;
